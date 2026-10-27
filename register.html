@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | HackFest 2026</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <script src="js/theme.js" defer></script>
+  <script src="js/nav.js" defer></script>
+  <script src="js/register.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">⚡ HackFest<span>2026</span></a>
+      <nav id="navLinks" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="speakers.html">Speakers</a>
+        <a href="sponsors.html">Sponsors</a>
+        <a href="faq.html">FAQ</a>
+        <a href="team.html">Team</a>
+        <a href="contact.html">Contact</a>
+        <a href="register.html" class="nav-cta">Register</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode">🌙</button>
+        <button id="menuToggle" class="icon-btn menu-toggle" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Register for HackFest</h1>
+        <p>Fill in your details below. It only takes a minute!</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <form id="registerForm" class="card form-card" novalidate>
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input id="fullName" type="text" placeholder="e.g. Priya Sharma">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="you@example.com">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Mobile Number</label>
+            <input id="phone" type="tel" placeholder="10-digit mobile number">
+          </div>
+
+          <div class="form-group">
+            <label for="department">Department</label>
+            <select id="department">
+              <option value="">Select department</option>
+              <option>CSE</option>
+              <option>IT</option>
+              <option>ECE</option>
+              <option>EEE</option>
+              <option>Mechanical</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="year">Year of Study</label>
+            <select id="year">
+              <option value="">Select year</option>
+              <option>1st Year</option>
+              <option>2nd Year</option>
+              <option>3rd Year</option>
+              <option>4th Year</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="eventChoice">Event</label>
+            <select id="eventChoice">
+              <option value="">Select an event</option>
+              <option>24-Hour Hackathon</option>
+              <option>Code Sprint</option>
+              <option>Debug Hunt</option>
+              <option>Web Design Battle</option>
+              <option>Tech Quiz</option>
+              <option>Pitch Perfect</option>
+              <option>Meme Contest</option>
+              <option>Git & GitHub Workshop</option>
+              <option>Intro to AI Workshop</option>
+            </select>
+          </div>
+
+          <div class="form-group checkbox">
+            <input id="agree" type="checkbox">
+            <label for="agree">I agree to follow the HackFest code of conduct.</label>
+          </div>
+
+          <button type="submit" class="btn btn-block">Register</button>
+
+          <p id="formMessage" class="form-message" role="status"></p>
+          <p class="text-muted text-center">Registrations from this device: <strong id="registerCount">0</strong></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>⚡ HackFest 2026 · Department of CSE</p>
+      <p class="credit">Register page built by Sahanaa D P</p>
+    </div>
+  </footer>
+</body>
+</html>
