@@ -1,0 +1,340 @@
+.btn {
+  display: inline-block;
+  padding: 12px 26px;
+  border: 2px solid var(--primary);
+  border-radius: 12px;
+  background: var(--primary);
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.btn:hover {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--link);
+  border-color: var(--link);
+}
+
+.btn-outline:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: rgba(109, 40, 217, 0.12);
+  color: var(--link);
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat strong {
+  display: block;
+  font-size: 2rem;
+  color: var(--link);
+}
+
+/* Countdown */
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 28px 0 10px;
+}
+
+.time-box {
+  min-width: 86px;
+  padding: 14px 18px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+}
+
+.time-box span {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--link);
+}
+
+.time-box small {
+  color: var(--muted);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
+
+/* Filter buttons and tabs */
+.filters,
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.filter-btn,
+.tab-btn {
+  padding: 8px 18px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.filter-btn.active,
+.tab-btn.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+}
+
+.event-meta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+/* Schedule timeline */
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 720px;
+}
+
+.timeline li {
+  display: flex;
+  gap: 18px;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--primary);
+  border-radius: 12px;
+}
+
+.timeline .time {
+  min-width: 90px;
+  font-weight: 600;
+  color: var(--link);
+}
+
+.timeline h3 {
+  margin-bottom: 4px;
+}
+
+.timeline p {
+  margin: 0;
+}
+
+/* Speakers and team avatars */
+.avatar {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(135deg, #6d28d9, #f59e0b);
+}
+
+/* Sponsors */
+.tier-title {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.sponsor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 110px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Lists with ticks */
+.check-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.check-list li {
+  padding: 6px 0;
+}
+
+/* FAQ accordion */
+.faq-list {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 20px;
+  background: none;
+  border: none;
+  color: var(--text);
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+}
+
+.faq-question .icon {
+  font-size: 1.4rem;
+  color: var(--link);
+  transition: transform 0.2s;
+}
+
+.faq-item.open .icon {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  padding: 0 20px 18px;
+  color: var(--muted);
+}
+
+/* Forms */
+.form-card {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: 2px solid var(--primary);
+  border-color: transparent;
+}
+
+.checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.checkbox input {
+  width: auto;
+  padding: 0;
+  margin-top: 6px;
+}
+
+.checkbox label {
+  margin: 0;
+  font-weight: 400;
+}
+
+.form-message {
+  margin-top: 16px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.form-message:empty {
+  display: none;
+}
+
+.form-message.success {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.form-message.error {
+  background: #fee2e2;
+  color: #991b1b;
+}
