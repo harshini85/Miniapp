@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team | HackFest 2026</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <script src="js/theme.js" defer></script>
+  <script src="js/nav.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">⚡ HackFest<span>2026</span></a>
+      <nav id="navLinks" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="speakers.html">Speakers</a>
+        <a href="sponsors.html">Sponsors</a>
+        <a href="faq.html">FAQ</a>
+        <a href="team.html">Team</a>
+        <a href="contact.html">Contact</a>
+        <a href="register.html" class="nav-cta">Register</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode">🌙</button>
+        <button id="menuToggle" class="icon-btn menu-toggle" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Meet the Builders</h1>
+        <p>This website was built by 21 students of the CSE Hackathon Bootcamp, one file each.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div id="teamGrid" class="container grid grid-4"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>⚡ HackFest 2026 · Department of CSE</p>
+      <p class="credit">Team page built by Domi Riya</p>
+    </div>
+  </footer>
+
+  <script>
+    const team = [
+      { name: "V Anushree", work: "Home page" },
+      { name: "Akaansha Vikram", work: "Base styles" },
+      { name: "S Krishitha", work: "Layout styles" },
+      { name: "Harshini S", work: "Component styles" },
+      { name: "Sanjay D S", work: "Dark mode" },
+      { name: "Kandakuri Sirivani Swathi", work: "Navigation menu" },
+      { name: "Joshika R", work: "Countdown timer" },
+      { name: "Dill Anto Jason C", work: "About page" },
+      { name: "Nirupam S", work: "Events page" },
+      { name: "Nirmal Kumar Vandhana Shree", work: "Event cards and filters" },
+      { name: "Jonish Manojin AG", work: "Schedule page" },
+      { name: "Bavathaarini NS", work: "Schedule tabs" },
+      { name: "Viswaa S", work: "Speakers page" },
+      { name: "Jesu Ronith", work: "Sponsors page" },
+      { name: "S S Padmasree", work: "FAQ page" },
+      { name: "R Manmohan", work: "FAQ accordion" },
+      { name: "Sahanaa D P", work: "Register page" },
+      { name: "Natasha Amalie", work: "Form validation" },
+      { name: "Amirthaa M", work: "Contact page" },
+      { name: "Domi Riya", work: "Team page" },
+      { name: "Kavya", work: "404 page" }
+    ];
+
+    function getInitials(name) {
+      const parts = name.split(" ").filter((part) => part !== "");
+      const first = parts[0] ? parts[0][0] : "";
+      const second = parts[1] ? parts[1][0] : "";
+      return (first + second).toUpperCase();
+    }
+
+    const teamGrid = document.querySelector("#teamGrid");
+
+    team.forEach((member) => {
+      const card = document.createElement("div");
+      card.className = "card text-center";
+
+      const avatar = document.createElement("div");
+      avatar.className = "avatar";
+      avatar.textContent = getInitials(member.name);
+
+      const name = document.createElement("h3");
+      name.textContent = member.name;
+
+      const work = document.createElement("span");
+      work.className = "badge";
+      work.textContent = member.work;
+
+      card.appendChild(avatar);
+      card.appendChild(name);
+      card.appendChild(work);
+      teamGrid.appendChild(card);
+    });
+  </script>
+</body>
+</html>
