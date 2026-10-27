@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events | HackFest 2026</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <script src="js/theme.js" defer></script>
+  <script src="js/nav.js" defer></script>
+  <script src="js/events.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">⚡ HackFest<span>2026</span></a>
+      <nav id="navLinks" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="speakers.html">Speakers</a>
+        <a href="sponsors.html">Sponsors</a>
+        <a href="faq.html">FAQ</a>
+        <a href="team.html">Team</a>
+        <a href="contact.html">Contact</a>
+        <a href="register.html" class="nav-cta">Register</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode">🌙</button>
+        <button id="menuToggle" class="icon-btn menu-toggle" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Events</h1>
+        <p>Technical contests, fun events and hands-on workshops. Pick your favourites!</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="technical">Technical</button>
+          <button class="filter-btn" data-filter="non-technical">Non-Technical</button>
+          <button class="filter-btn" data-filter="workshop">Workshops</button>
+        </div>
+
+        <div id="eventsGrid" class="grid grid-3"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>⚡ HackFest 2026 · Department of CSE</p>
+      <p class="credit">Events page built by Nirupam S</p>
+    </div>
+  </footer>
+</body>
+</html>
