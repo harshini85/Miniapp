@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule | HackFest 2026</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <script src="js/theme.js" defer></script>
+  <script src="js/nav.js" defer></script>
+  <script src="js/schedule.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">⚡ HackFest<span>2026</span></a>
+      <nav id="navLinks" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="speakers.html">Speakers</a>
+        <a href="sponsors.html">Sponsors</a>
+        <a href="faq.html">FAQ</a>
+        <a href="team.html">Team</a>
+        <a href="contact.html">Contact</a>
+        <a href="register.html" class="nav-cta">Register</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode">🌙</button>
+        <button id="menuToggle" class="icon-btn menu-toggle" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Schedule</h1>
+        <p>Two packed days. Plan your time and don't miss your favourite events.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="tabs">
+          <button class="tab-btn active" data-day="1">Day 1 · Dec 12</button>
+          <button class="tab-btn" data-day="2">Day 2 · Dec 13</button>
+        </div>
+
+        <ul id="day1" class="timeline tab-panel">
+          <li><span class="time">09:00 AM</span><div><h3>Registration and Breakfast</h3><p class="text-muted">Collect your ID badge and welcome kit at the help desk.</p></div></li>
+          <li><span class="time">10:00 AM</span><div><h3>Opening Ceremony and Hackathon Kick-off</h3><p class="text-muted">Problem statements are revealed and the 24-hour clock starts.</p></div></li>
+          <li><span class="time">11:00 AM</span><div><h3>Git and GitHub Workshop</h3><p class="text-muted">Hands-on session on branches and pull requests.</p></div></li>
+          <li><span class="time">01:00 PM</span><div><h3>Lunch Break</h3><p class="text-muted">Food court near the auditorium.</p></div></li>
+          <li><span class="time">02:00 PM</span><div><h3>Code Sprint</h3><p class="text-muted">Individual coding contest in Lab 1.</p></div></li>
+          <li><span class="time">04:00 PM</span><div><h3>Tech Quiz</h3><p class="text-muted">Teams of two in Seminar Hall.</p></div></li>
+          <li><span class="time">08:00 PM</span><div><h3>Hackathon Mentor Round</h3><p class="text-muted">Mentors visit every team to give feedback.</p></div></li>
+        </ul>
+
+        <ul id="day2" class="timeline tab-panel" hidden>
+          <li><span class="time">09:30 AM</span><div><h3>Intro to AI Workshop</h3><p class="text-muted">Build a tiny project with an AI tool.</p></div></li>
+          <li><span class="time">10:00 AM</span><div><h3>Hackathon Ends · Debug Hunt Starts</h3><p class="text-muted">Final hackathon submissions close; Debug Hunt begins in Lab 2.</p></div></li>
+          <li><span class="time">11:30 AM</span><div><h3>Web Design Battle</h3><p class="text-muted">Design a landing page on a surprise theme.</p></div></li>
+          <li><span class="time">01:00 PM</span><div><h3>Lunch Break</h3><p class="text-muted">Food court near the auditorium.</p></div></li>
+          <li><span class="time">02:00 PM</span><div><h3>Pitch Perfect and Hackathon Demos</h3><p class="text-muted">Teams present their ideas and projects to the judges.</p></div></li>
+          <li><span class="time">03:30 PM</span><div><h3>Meme Contest</h3><p class="text-muted">Results are shown live on the big screen.</p></div></li>
+          <li><span class="time">05:00 PM</span><div><h3>Prize Distribution and Closing</h3><p class="text-muted">Winners announced and certificates handed out.</p></div></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>⚡ HackFest 2026 · Department of CSE</p>
+      <p class="credit">Schedule page built by Jonish Manojin AG</p>
+    </div>
+  </footer>
+</body>
+</html>
